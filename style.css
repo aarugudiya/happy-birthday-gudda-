@@ -1,49 +1,84 @@
-body{
+*{
 margin:0;
 padding:0;
-background:linear-gradient(180deg,#000428,#004e92);
+box-sizing:border-box;
+}
+
+body{
+font-family:Georgia,serif;
+background:linear-gradient(180deg,#020024,#090979,#000);
 color:white;
-font-family:Arial,sans-serif;
 overflow-x:hidden;
+}
+
+.overlay{
+min-height:100vh;
+padding:30px;
+}
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
 text-align:center;
 }
 
-.container{
-padding:40px;
+.hero h1{
+font-size:60px;
+color:#fff;
+text-shadow:0 0 20px #ff69b4;
+animation:fade 2s ease;
 }
 
-h1{
-font-size:45px;
-margin-top:70px;
-animation:fade 2s;
+.hero h2{
+font-size:36px;
+margin:15px 0;
+color:#ffd1e8;
 }
 
-h2{
-font-weight:300;
-color:#ffd6ec;
+.hero h3{
+color:#ffe6f2;
+margin-bottom:20px;
 }
 
-.text{
+.hero p{
 font-size:20px;
 line-height:1.8;
-max-width:800px;
-margin:auto;
-padding:20px;
+max-width:700px;
 }
 
 button{
+margin-top:30px;
 padding:15px 35px;
-font-size:18px;
 border:none;
-border-radius:40px;
-background:#ff4d88;
+border-radius:50px;
+background:#ff4f8b;
 color:white;
+font-size:18px;
 cursor:pointer;
-margin-top:20px;
+transition:.3s;
 }
 
 button:hover{
-transform:scale(1.05);
+transform:scale(1.08);
+}
+
+#letter{
+padding:80px 20px;
+text-align:center;
+}
+
+#letter h1{
+margin-bottom:30px;
+}
+
+#typewriter{
+max-width:800px;
+margin:auto;
+font-size:20px;
+line-height:1.9;
 }
 
 @keyframes fade{
