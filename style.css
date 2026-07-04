@@ -1,16 +1,58 @@
-body {
-  margin: 0;
-  background: linear-gradient(to bottom, #000428, #004e92);
-  color: white;
-  font-family: Arial, sans-serif;
-  text-align: center;
+body{
+margin:0;
+padding:0;
+background:linear-gradient(180deg,#000428,#004e92);
+color:white;
+font-family:Arial,sans-serif;
+overflow-x:hidden;
+text-align:center;
 }
 
-h1 {
-  margin-top: 80px;
-  font-size: 42px;
+.container{
+padding:40px;
 }
 
-p {
-  font-size: 20px;
+h1{
+font-size:45px;
+margin-top:70px;
+animation:fade 2s;
+}
+
+h2{
+font-weight:300;
+color:#ffd6ec;
+}
+
+.text{
+font-size:20px;
+line-height:1.8;
+max-width:800px;
+margin:auto;
+padding:20px;
+}
+
+button{
+padding:15px 35px;
+font-size:18px;
+border:none;
+border-radius:40px;
+background:#ff4d88;
+color:white;
+cursor:pointer;
+margin-top:20px;
+}
+
+button:hover{
+transform:scale(1.05);
+}
+
+@keyframes fade{
+from{
+opacity:0;
+transform:translateY(40px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
 }
