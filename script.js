@@ -103,3 +103,23 @@ setInterval(function () {
     img.src = photos[currentPhoto];
   }
 }, 3000);
+const videos = [
+  "images/Screenrecording_20251225_170725.mp4",
+  "images/Screenrecording_20260121_220104.mp4",
+  "images/VID_20251130_173830_971.mp4"
+];
+
+let currentVideo = 0;
+
+const player = document.getElementById("memoryVideo");
+
+player.src = videos[currentVideo];
+
+player.addEventListener("ended", function () {
+  currentVideo++;
+
+  if (currentVideo < videos.length) {
+    player.src = videos[currentVideo];
+    player.play();
+  }
+});
