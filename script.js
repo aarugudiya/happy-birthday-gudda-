@@ -84,7 +84,7 @@ const photos = [
 "images/Screenshot_20260522_161314.jpg",
 "images/Screenshot_20260524_233722.jpg",
 "images/Snapchat-1711592191.jpg",
-"images/file_0000000005707ffd89cdeb78db13a8fd.png",
+"images/file_0000000005f071fd89cdeb78db13a8fd.png",
 "images/file_000000003aa871fd945b3b2506eda5c7.png"
 ];
 
