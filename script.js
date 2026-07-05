@@ -60,3 +60,29 @@ function typeWriter() {
     }
 
 }
+const photos = [
+  "images/1763313051800.jpg",
+  "images/IMG-20251003-WA0000.jpg",
+  "images/IMG-20251008-WA0050.jpg",
+  "images/IMG-20251229-WA0044.jpg",
+  "images/IMG-20260122-WA0078.jpg",
+  "images/IMG-20260321-WA0020.jpg",
+  "images/IMG-20260427-WA0004.jpg",
+  "images/IMG-20260526-WA0032.jpg"
+];
+
+let currentPhoto = 0;
+
+setInterval(function () {
+  const img = document.getElementById("slideshow");
+
+  if (img) {
+    currentPhoto++;
+
+    if (currentPhoto >= photos.length) {
+      currentPhoto = 0;
+    }
+
+    img.src = photos[currentPhoto];
+  }
+}, 3000);
