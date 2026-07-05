@@ -122,3 +122,19 @@ transform:translateY(0);
 transform:translateY(-140vh);
 }
 }
+#gallery{
+    padding:80px 20px;
+    text-align:center;
+}
+
+#gallery h1{
+    margin-bottom:25px;
+}
+
+#slideshow{
+    width:90%;
+    max-width:350px;
+    border-radius:20px;
+    box-shadow:0 0 20px #ff69b4;
+    transition:1s;
+}
