@@ -150,3 +150,19 @@ transform:translateY(-140vh);
     display:block;
     background:black;
 }
+#videos{
+    padding:80px 20px;
+    text-align:center;
+}
+
+#videos h1{
+    margin-bottom:25px;
+}
+
+#memoryVideo{
+    width:90%;
+    max-width:380px;
+    border-radius:20px;
+    box-shadow:0 0 20px rgba(255,105,180,.5);
+    background:black;
+}
