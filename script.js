@@ -61,14 +61,31 @@ function typeWriter() {
 
 }
 const photos = [
-  "images/1763313051800.jpg",
-  "images/IMG-20251003-WA0000.jpg",
-  "images/IMG-20251008-WA0050.jpg",
-  "images/IMG-20251229-WA0044.jpg",
-  "images/IMG-20260122-WA0078.jpg",
-  "images/IMG-20260321-WA0020.jpg",
-  "images/IMG-20260427-WA0004.jpg",
-  "images/IMG-20260526-WA0032.jpg"
+"images/1763313051800.jpg",
+"images/Gemini_Generated_Image_u3zgawu3zgawu3zg.png",
+"images/IMG-20251003-WA0000.jpg",
+"images/IMG-20251008-WA0050.jpg",
+"images/IMG-20251229-WA0044.jpg",
+"images/IMG-20260122-WA0078.jpg",
+"images/IMG-20260321-WA0020.jpg",
+"images/IMG-20260427-WA0004.jpg",
+"images/IMG-20260526-WA0032.jpg",
+"images/IMG_20260406_215949_823.jpg",
+"images/IMG_20260406_220120_357.jpg",
+"images/IMG_20260406_220131_660.jpg",
+"images/IMG_20260414_144841.jpg",
+"images/Screenshot_20251225_141624.jpg",
+"images/Screenshot_20251225_164449.jpg",
+"images/Screenshot_20251227_151506.jpg",
+"images/Screenshot_20260207_221542.jpg",
+"images/Screenshot_20260509_011628.jpg",
+"images/Screenshot_20260514_025530.jpg",
+"images/Screenshot_20260522_022454.jpg",
+"images/Screenshot_20260522_161314.jpg",
+"images/Screenshot_20260524_233722.jpg",
+"images/Snapchat-1711592191.jpg",
+"images/file_0000000005707ffd89cdeb78db13a8fd.png",
+"images/file_000000003aa871fd945b3b2506eda5c7.png"
 ];
 
 let currentPhoto = 0;
