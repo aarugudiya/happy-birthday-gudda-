@@ -1,8 +1,4 @@
-function scrollToLetter() {
-    document.getElementById("letter").scrollIntoView({
-        behavior: "smooth"
-    });
-}
+let i = 0;
 
 const message = `
 
@@ -37,14 +33,30 @@ Your Rani ❤️
 
 `;
 
-let i = 0;
+function scrollToLetter() {
 
-function typeWriter() {
-    if (i < message.length) {
-        document.getElementById("typewriter").innerHTML += message.charAt(i);
-        i++;
-        setTimeout(typeWriter, 40);
+    document.getElementById("letter").style.display = "block";
+
+    document.getElementById("letter").scrollIntoView({
+        behavior: "smooth"
+    });
+
+    if (i === 0) {
+        document.getElementById("typewriter").innerHTML = "";
+        typeWriter();
     }
 }
 
-window.onload = typeWriter;
+function typeWriter() {
+
+    if (i < message.length) {
+
+        document.getElementById("typewriter").innerHTML += message.charAt(i);
+
+        i++;
+
+        setTimeout(typeWriter, 40);
+
+    }
+
+}
