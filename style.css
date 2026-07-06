@@ -152,6 +152,14 @@ transform:translateY(-140vh);
     display:block;
     background:black;
 }
+#slideshow{
+    position:relative;
+    z-index:1;
+}
+
+#nextMemory{
+    pointer-events:auto;
+}
 #videos{
     padding:80px 20px;
     text-align:center;
@@ -168,23 +176,24 @@ transform:translateY(-140vh);
     box-shadow:0 0 20px rgba(255,105,180,.5);
     background:black;
 }
+
 #nextMemory{
     position:absolute;
-    right:-45px;
     top:50%;
+    right:10px;
     transform:translateY(-50%);
     background:#ff4f8b;
     color:white;
-    padding:12px 14px;
-    border-radius:18px;
+    padding:12px;
+    border-radius:15px;
     text-align:center;
-    font-size:15px;
+    font-size:14px;
     font-weight:bold;
     cursor:pointer;
     box-shadow:0 0 15px rgba(255,105,180,.7);
     user-select:none;
-}
-
+    z-index:999;
+    }
 @keyframes pulse{
     0%{transform:translateY(-50%) scale(1);}
     50%{transform:translateY(-50%) scale(1.08);}
