@@ -88,21 +88,7 @@ const photos = [
 "images/file_000000003aa871fd945b3b2506eda5c7.png"
 ];
 
-let currentPhoto = 0;
 
-setInterval(function () {
-  const img = document.getElementById("slideshow");
-
-  if (img) {
-    currentPhoto++;
-
-    if (currentPhoto >= photos.length) {
-      currentPhoto = 0;
-    }
-
-    img.src = photos[currentPhoto];
-  }
-}, 3000);
 const videos = [
   "images/Screenrecording_20251225_170725.mp4",
   "images/Screenrecording_20260121_220104.mp4",
@@ -123,6 +109,8 @@ player.addEventListener("ended", function () {
     player.play();
   }
 });
+let currentPhoto = 0;
+
 const nextMemory = document.getElementById("nextMemory");
 
 function showNextPhoto() {
@@ -135,7 +123,7 @@ function showNextPhoto() {
   document.getElementById("slideshow").src = photos[currentPhoto];
 }
 
-setInterval(showNextPhoto, 2000);
+setInterval(showNextPhoto, 3000);
 
 if (nextMemory) {
   nextMemory.onclick = showNextPhoto;
