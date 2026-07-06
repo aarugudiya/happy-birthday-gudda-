@@ -123,3 +123,14 @@ player.addEventListener("ended", function () {
     player.play();
   }
 });
+document.getElementById("nextMemory").addEventListener("click", function () {
+
+  currentPhoto++;
+
+  if (currentPhoto >= photos.length) {
+    currentPhoto = 0;
+  }
+
+  document.getElementById("slideshow").src = photos[currentPhoto];
+
+});
