@@ -100,7 +100,7 @@ let currentVideo = 0;
 const player = document.getElementById("memoryVideo");
 
 player.src = videos[currentVideo];
-
+player.play();
 player.addEventListener("ended", function () {
   currentVideo++;
 
@@ -113,14 +113,11 @@ let currentPhoto = 0;
 
 const nextMemory = document.getElementById("nextMemory");
 
+const slideshow = document.getElementById("slideshow");
+
 function showNextPhoto() {
-  currentPhoto++;
-
-  if (currentPhoto >= photos.length) {
-    currentPhoto = 0;
-  }
-
-  document.getElementById("slideshow").src = photos[currentPhoto];
+  currentPhoto = (currentPhoto + 1) % photos.length;
+  slideshow.src = photos[currentPhoto];
 }
 
 setInterval(showNextPhoto, 3000);
