@@ -176,3 +176,26 @@ transform:translateY(-140vh);
     margin-top:20px;
     border:2px solid red;
 }
+#nextMemory{
+    position:absolute;
+    right:-45px;
+    top:50%;
+    transform:translateY(-50%);
+    background:#ff4f8b;
+    color:white;
+    padding:12px 14px;
+    border-radius:18px;
+    text-align:center;
+    font-size:15px;
+    font-weight:bold;
+    cursor:pointer;
+    box-shadow:0 0 15px rgba(255,105,180,.7);
+    animation:pulse 1.4s infinite;
+    user-select:none;
+}
+
+@keyframes pulse{
+    0%{transform:translateY(-50%) scale(1);}
+    50%{transform:translateY(-50%) scale(1.08);}
+    100%{transform:translateY(-50%) scale(1);}
+}
