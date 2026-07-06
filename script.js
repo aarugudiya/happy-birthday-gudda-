@@ -123,8 +123,9 @@ player.addEventListener("ended", function () {
     player.play();
   }
 });
-document.getElementById("nextMemory").addEventListener("click", function () {
+const nextMemory = document.getElementById("nextMemory");
 
+function showNextPhoto() {
   currentPhoto++;
 
   if (currentPhoto >= photos.length) {
@@ -132,20 +133,10 @@ document.getElementById("nextMemory").addEventListener("click", function () {
   }
 
   document.getElementById("slideshow").src = photos[currentPhoto];
+}
 
-});
-const nextMemory = document.getElementById("nextMemory");
+setInterval(showNextPhoto, 2000);
 
 if (nextMemory) {
-  nextMemory.addEventListener("click", function () {
-
-    currentPhoto++;
-
-    if (currentPhoto >= photos.length) {
-      currentPhoto = 0;
-    }
-
-    document.getElementById("slideshow").src = photos[currentPhoto];
-
-  });
+  nextMemory.onclick = showNextPhoto;
 }
