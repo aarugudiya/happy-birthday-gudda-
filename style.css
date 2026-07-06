@@ -169,14 +169,6 @@ transform:translateY(-140vh);
     background:black;
 }
 #nextMemory{
-    display:block;
-    color:white;
-    font-size:24px;
-    text-align:center;
-    margin-top:20px;
-    border:2px solid red;
-}
-#nextMemory{
     position:absolute;
     right:-45px;
     top:50%;
@@ -190,7 +182,6 @@ transform:translateY(-140vh);
     font-weight:bold;
     cursor:pointer;
     box-shadow:0 0 15px rgba(255,105,180,.7);
-    animation:pulse 1.4s infinite;
     user-select:none;
 }
 
