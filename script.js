@@ -134,3 +134,18 @@ document.getElementById("nextMemory").addEventListener("click", function () {
   document.getElementById("slideshow").src = photos[currentPhoto];
 
 });
+const nextMemory = document.getElementById("nextMemory");
+
+if (nextMemory) {
+  nextMemory.addEventListener("click", function () {
+
+    currentPhoto++;
+
+    if (currentPhoto >= photos.length) {
+      currentPhoto = 0;
+    }
+
+    document.getElementById("slideshow").src = photos[currentPhoto];
+
+  });
+}
