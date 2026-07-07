@@ -104,12 +104,6 @@ function scrollToLetter() {
         typeWriter();
     }
 }
-    if (i === 0) {
-        document.getElementById("typewriter").innerHTML = "";
-        typeWriter();
-    }
-}
-
 function typeWriter() {
 
     if (i < message.length) {
