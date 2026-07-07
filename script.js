@@ -104,19 +104,7 @@ function scrollToLetter() {
 
 }
 
-function typeWriter() {
 
-    if (i < message.length) {
-
-        document.getElementById("typewriter").innerHTML += message.charAt(i);
-
-        i++;
-
-        setTimeout(typeWriter, 40);
-
-    }
-
-}
 const photos = [
 "images/1763313051800.jpg",
 "images/Gemini_Generated_Image_u3zgawu3zgawu3zg.png",
