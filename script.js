@@ -92,10 +92,12 @@ function scrollToLetter() {
 
     document.getElementById("letter").style.display = "block";
 
+setTimeout(() => {
     document.getElementById("letter").scrollIntoView({
-        behavior: "smooth"
+        behavior: "smooth",
+        block: "start"
     });
-
+}, 100);
     if (i === 0) {
         document.getElementById("typewriter").innerHTML = "";
         typeWriter();
