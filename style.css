@@ -51,16 +51,19 @@ max-width:700px;
 }
 
 button{
-margin-top:30px;
-padding:15px 35px;
+margin-top:40px;
+padding:20px 55px;
 border:none;
 border-radius:50px;
 background:#ff4f8b;
 color:white;
-font-size:18px;
+font-size:26px;
+font-weight:bold;
 cursor:pointer;
 transition:.3s;
+box-shadow:0 0 20px rgba(255,105,180,.7);
 }
+
 
 button:hover{
 transform:scale(1.08);
