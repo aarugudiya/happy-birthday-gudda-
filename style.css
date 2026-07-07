@@ -52,12 +52,12 @@ max-width:700px;
 
 button{
 margin-top:20px;
-padding:20px 55px;
+padding:22px 60px;
 border:none;
 border-radius:50px;
 background:#ff4f8b;
 color:white;
-font-size:26px;
+font-size:30px;
 font-weight:bold;
 cursor:pointer;
 transition:.3s;
