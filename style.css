@@ -13,15 +13,17 @@ overflow-x:hidden;
 
 .overlay{
 min-height:100vh;
-padding:30px;
-}
 
 .hero{
-height:100vh;
+min-height:100vh;
 display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
+text-align:center;
+padding:80px 0;
+}
+
 text-align:center;
 }
 
