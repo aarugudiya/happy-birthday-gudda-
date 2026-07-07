@@ -87,26 +87,23 @@ Hamesha tumhari khushi ki dua karne wali...
 Tumhari Aaru Beti ❤️
 
 `;
-
 function scrollToLetter() {
 
     const letter = document.getElementById("letter");
 
     letter.style.display = "block";
 
-    if (i === 0) {
-        document.getElementById("typewriter").innerHTML = "";
-        typeWriter();
-    }
+    letter.classList.add("show");
 
-    setTimeout(() => {
-        window.scrollTo({
-            top: letter.offsetTop,
-            behavior: "smooth"
-        });
-    }, 100);
+    document.getElementById("typewriter").innerText = message;
+
+    letter.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+    });
 
 }
+
 function typeWriter() {
 
     if (i < message.length) {
