@@ -70,8 +70,17 @@ transform:scale(1.08);
 }
 
 #letter{
-padding:40px 20px;
-text-align:center;
+    padding:40px 20px;
+    text-align:center;
+
+    opacity:0;
+    transform:translateY(-80px);
+    transition:all 1s ease;
+}
+
+#letter.show{
+    opacity:1;
+    transform:translateY(0);
 }
 
 #letter h1{
