@@ -94,15 +94,18 @@ function scrollToLetter() {
 
     letter.style.display = "block";
 
-    letter.scrollIntoView({
-        behavior: "smooth",
-        block: "start"
-    });
-
     if (i === 0) {
         document.getElementById("typewriter").innerHTML = "";
         typeWriter();
     }
+
+    setTimeout(() => {
+        window.scrollTo({
+            top: letter.offsetTop,
+            behavior: "smooth"
+        });
+    }, 100);
+
 }
 function typeWriter() {
 
