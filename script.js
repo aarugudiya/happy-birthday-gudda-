@@ -90,12 +90,20 @@ Tumhari Aaru Beti ❤️
 
 function scrollToLetter() {
 
-    
-    document.getElementById("letter").style.display = "block";
+    const letter = document.getElementById("letter");
 
-setTimeout(() => {
-    
-}, 100);
+    letter.style.display = "block";
+
+    letter.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+    });
+
+    if (i === 0) {
+        document.getElementById("typewriter").innerHTML = "";
+        typeWriter();
+    }
+}
     if (i === 0) {
         document.getElementById("typewriter").innerHTML = "";
         typeWriter();
