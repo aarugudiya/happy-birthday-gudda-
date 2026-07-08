@@ -233,9 +233,12 @@ transform:translateY(-140vh);
 }
 
 #lastMessage h1{
+    display:block;
+    width:100%;
+    text-align:center;
+    margin:0 auto 30px;
     font-size:40px;
     color:#ffd1e8;
-    margin-bottom:30px;
 }
 
 #lastText{
