@@ -105,7 +105,21 @@ function scrollToLetter() {
     }, 100);
 
 }
+const voiceNote = document.getElementById("voiceNote");
+const birthdaySong = document.getElementById("birthdaySong");
+const song2 = document.getElementById("song2");
 
+document.getElementById("surpriseBtn").addEventListener("click", function () {
+    voiceNote.play();
+});
+
+voiceNote.addEventListener("ended", function () {
+    birthdaySong.play();
+});
+
+birthdaySong.addEventListener("ended", function () {
+    song2.play();
+});
 const photos = [
 "images/1763313051800.jpg",
 "images/Gemini_Generated_Image_u3zgawu3zgawu3zg.png",
