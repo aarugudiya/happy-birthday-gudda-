@@ -109,9 +109,15 @@ const voiceNote = document.getElementById("voiceNote");
 const birthdaySong = document.getElementById("birthdaySong");
 const song2 = document.getElementById("song2");
 
-document.getElementById("surpriseBtn").addEventListener("click", function () {
-    voiceNote.play();
+document.getElementById("surpriseBtn").addEventListener("click", async function () {
+    try {
+        await voiceNote.play();
+    } catch (e) {
+        alert("Audio couldn't start.");
+        console.log(e);
+    }
 });
+
 
 voiceNote.addEventListener("ended", function () {
     birthdaySong.play();
