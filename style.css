@@ -228,6 +228,9 @@ transform:translateY(-140vh);
 }
 #lastMessage{
     padding:80px 25px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
     text-align:center;
     animation:fadeUp 1.5s ease;
 }
@@ -243,7 +246,7 @@ transform:translateY(-140vh);
 }
 
 #lastText{
-    max-width:800px;
+    max-width:650px;
     margin:auto;
     white-space:pre-line;
     font-size:22px;
