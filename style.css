@@ -267,3 +267,17 @@ transform:translateY(-140vh);
         transform:translateY(0);
     }
         }
+.ending{
+    margin-top:70px;
+    margin-bottom:70px;
+    text-align:center;
+    font-size:34px;
+    font-weight:bold;
+    color:#ffd1e8;
+    line-height:2.2;
+    text-shadow:
+        0 0 10px #ff69b4,
+        0 0 20px #ff69b4,
+        0 0 30px #ff69b4;
+    animation:fadeUp 2s ease;
+}
