@@ -268,11 +268,10 @@ transform:translateY(-140vh);
     }
         }
 .ending{
-    margin-top:70px;
-    margin-bottom:70px;
+    width:100%;
     text-align:center;
+    margin-top:60px;
     font-size:34px;
-    font-weight:bold;
-    color:white;
-    line-height:2.2;
+    line-height:2;
+    color:#fff;
 }
