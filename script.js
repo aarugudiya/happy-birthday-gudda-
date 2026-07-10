@@ -137,15 +137,19 @@ const voiceNote = document.getElementById("voiceNote");
 const birthdaySong = document.getElementById("birthdaySong");
 const song2 = document.getElementById("song2");
 
+
 document.getElementById("surpriseBtn").addEventListener("click", async function () {
+
+    startConfetti();
+
     try {
         await voiceNote.play();
     } catch (e) {
         alert("Audio couldn't start.");
         console.log(e);
     }
-});
 
+}, { once: true });
 
 voiceNote.addEventListener("ended", function () {
     birthdaySong.play();
