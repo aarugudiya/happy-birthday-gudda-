@@ -105,6 +105,34 @@ function scrollToLetter() {
     }, 100);
 
 }
+function startConfetti() {
+
+    const duration = 10000;
+    const end = Date.now() + duration;
+
+    (function frame() {
+
+        confetti({
+            particleCount: 3,
+            angle: 60,
+            spread: 70,
+            origin: { x: 0 }
+        });
+
+        confetti({
+            particleCount: 3,
+            angle: 120,
+            spread: 70,
+            origin: { x: 1 }
+        });
+
+        if (Date.now() < end) {
+            requestAnimationFrame(frame);
+        }
+
+    })();
+
+}
 const voiceNote = document.getElementById("voiceNote");
 const birthdaySong = document.getElementById("birthdaySong");
 const song2 = document.getElementById("song2");
