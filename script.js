@@ -116,7 +116,7 @@ function startConfetti() {
             particleCount: 3,
             angle: 60,
             spread: 70,
-            origin: { x: 0 }
+            origin: { x: 0 },
             colors: ['#ff69b4', '#ffb6c1', '#ffffff', '#ffd700'],
         });
 
@@ -124,7 +124,7 @@ function startConfetti() {
             particleCount: 3,
             angle: 120,
             spread: 70,
-            origin: { x: 1 }
+            origin: { x: 1 },
             colors: ['#ff69b4', '#ffb6c1', '#ffffff', '#ffd700'],
         });
 
