@@ -117,6 +117,7 @@ function startConfetti() {
             angle: 60,
             spread: 70,
             origin: { x: 0 }
+            colors: ['#ff69b4', '#ffb6c1', '#ffffff', '#ffd700'],
         });
 
         confetti({
@@ -124,6 +125,7 @@ function startConfetti() {
             angle: 120,
             spread: 70,
             origin: { x: 1 }
+            colors: ['#ff69b4', '#ffb6c1', '#ffffff', '#ffd700'],
         });
 
         if (Date.now() < end) {
